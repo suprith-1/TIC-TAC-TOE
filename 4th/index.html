@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1 id="xname">PLAYER X</h1>
+            <h2>Score</h2>
+            <span id="xscore">0</span>
+            <p id="xwin">YOU WIN</p>
+        </div>
+        <div class="middle">
+            <button id="playagain" onclick="reset()">PLAY AGAIN</button>
+            <table>
+                <tr>
+                    <td><button id="00" class="button" onclick="get(0,0,id)"></button></td>
+                    <td><button id="01" class="button" onclick="get(0,1,id)"></button></td>
+                    <td><button id="02" class="button" onclick="get(0,2,id)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="10" class="button" onclick="get(1,0,id)"></button></td>
+                    <td><button id="11" class="button" onclick="get(1,1,id)"></button></td>
+                    <td><button id="12" class="button" onclick="get(1,2,id)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="20" class="button" onclick="get(2,0,id)"></button></td>
+                    <td><button id="21" class="button" onclick="get(2,1,id)"></button></td>
+                    <td><button id="22" class="button" onclick="get(2,2,id)"></button></td>
+                </tr>
+            </table>
+            <button id="mode" onclick="mode()">MODE</button>
+        </div>
+        <div class="right">
+            <h1 id="oname">PLAYER O</h1>
+            <h2>Score</h2>
+            <span id="oscore">0</span>
+            <p id="owin">YOU WIN</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
